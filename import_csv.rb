@@ -6,7 +6,7 @@ require './exams'
 class ImportCsv
 
 
-def import_csv
+def self.import
   rows = CSV.read("./data.csv", col_sep: ';')
   columns = rows.shift
 

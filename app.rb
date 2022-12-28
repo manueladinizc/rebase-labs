@@ -15,9 +15,7 @@ get '/' do
 end
 
 get '/tests' do
-
-  
+  ImportCsv.import
   Exam.all.to_json
-
 end
 
