@@ -1,5 +1,5 @@
 require 'sinatra'
-# require 'rack/handler/puma'
+require 'rack/handler/puma'
 require 'sinatra/activerecord'
 require './exams'
 require './import_csv'
@@ -21,8 +21,8 @@ get '/' do
   erb :index
 end
 
-# Rack::Handler::Puma.run(
-#   Sinatra::Application,
-#   Port: 3000,
-#   Host: '0.0.0.0'
-# )
+Rack::Handler::Puma.run(
+  Sinatra::Application,
+  Port: 3000,
+  Host: '0.0.0.0'
+)
