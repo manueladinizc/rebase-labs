@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exams</title>
+</head>
+<body>
+    <ul>
+        <% @exams.each do |exam| %>
+            <li><%= exam.name %></li>
+            <li><%= exam.registration_number %></li>
+            <li><%= exam.email %></li>
+        <% end %>
+    </ul>
+</body>
+</html>
