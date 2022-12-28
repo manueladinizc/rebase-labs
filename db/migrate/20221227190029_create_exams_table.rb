@@ -18,5 +18,21 @@ class CreateExamsTable < ActiveRecord::Migration[7.0]
       t.string :exam_limit
       t.string :exam_type_result
     end
+    add_index :exams, [ :registration_number,
+                          :name,
+                          :email,
+                          :birth_date,
+                          :address,
+                          :city,
+                          :state,
+                          :doctor_crm,
+                          :doctor_crm_state,
+                          :doctor_name,
+                          :doctor_email,
+                          :exam_token,
+                          :exam_date,
+                          :exam_type,
+                          :exam_limit,
+                          :exam_type_result ], unique: true, name: 'patient'
   end
 end

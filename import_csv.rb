@@ -2,12 +2,10 @@ require 'csv'
 require 'sinatra/activerecord'
 require './exams'
 
-
 class ImportCsv
 
-
 def self.import
-  rows = CSV.read("./data.csv", col_sep: ';')
+  rows = CSV.read("./data.csv", col_sep: ';')[0,10]
   columns = rows.shift
 
   a = rows.map do |row|

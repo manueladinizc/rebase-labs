@@ -28,6 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_27_190029) do
     t.string "exam_type"
     t.string "exam_limit"
     t.string "exam_type_result"
+    t.index ["registration_number", "name", "email", "birth_date", "address", "city", "state", "doctor_crm", "doctor_crm_state", "doctor_name", "doctor_email", "exam_token", "exam_date", "exam_type", "exam_limit", "exam_type_result"], name: "patient", unique: true
   end
 
 end
