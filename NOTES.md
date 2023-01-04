@@ -10,7 +10,7 @@
 
 -[ ] Utilizar a gem pg ou gem ActiveRecord standalone
 
-Obs: A versão atual está ustilizando o banco de dados SQLite.
+Obs: A versão atual está utilizando o banco de dados SQLite.
 
 ## Lab2
 
