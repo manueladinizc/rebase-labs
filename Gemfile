@@ -6,8 +6,11 @@ gem 'sqlite3'
 gem 'rake'
 gem 'rack'
 gem 'rack-test'
-
+gem 'pry-byebug'
+gem 'pry'
 gem 'puma'
 
-gem 'rspec'
-gem 'capybara'
+group :test, :development do
+  gem 'rspec'
+  gem 'capybara'
+end

@@ -6,7 +6,11 @@
 
 -[x] Modificar a implementação do endpoint atual
 
-Obs: A versão atual está ustilizando o bando de dados do SQLite. Testes estão em desenvolvimento.
+-[ ] Postgres
+
+-[ ] Utilizar a gem pg ou gem ActiveRecord standalone
+
+Obs: A versão atual está ustilizando o banco de dados SQLite.
 
 ## Lab2
 
