@@ -24,7 +24,7 @@ class ImportCsv
         birth_date: r['data nascimento paciente'],
         address: r['endereço/rua paciente'],
         city: r['cidade paciente'],
-        state: r['estado paciente'],
+        state: r['estado patiente'],
         doctor_crm: r['crm médico'],
         doctor_crm_state: r['crm médico estado'],
         doctor_name: r['nome médico'],

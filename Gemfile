@@ -10,6 +10,9 @@ gem 'pry-byebug'
 gem 'pry'
 gem 'puma'
 
+gem 'sinatra-contrib'
+#gem 'sinatra'
+
 group :test, :development do
   gem 'rspec'
   gem 'capybara'
