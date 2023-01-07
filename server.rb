@@ -20,9 +20,6 @@ namespace '/api/v1' do
   get '/tests' do
     Exam.all.to_json
   end
-  get '/tests/:id' do
-    Exam.all.to_json
-  end
 end
 
 get '/hello' do
