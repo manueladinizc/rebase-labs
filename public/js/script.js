@@ -31,6 +31,3 @@ fetch('http://localhost:4567/api/v1/tests')
 }).catch((error)=>{ 
   console.log(error);
 })
-  // .then(res => res.json())
-  // .then(data => console.log(data))
-  // .catch(error => console.log('ERROR'))

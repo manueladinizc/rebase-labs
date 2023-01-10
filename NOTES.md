@@ -10,7 +10,7 @@
 
 -[ ] Utilizar a gem pg ou gem ActiveRecord standalone
 
-Obs: A versão atual está utilizando o banco de dados SQLite. Pendente configurar mock de dados para testes.
+Obs: A versão atual está utilizando o banco de dados SQLite. Pendente configurar database para development e test.
 
 ## Lab2
 
