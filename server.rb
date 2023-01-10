@@ -18,6 +18,7 @@ namespace '/api/v1' do
     content_type :json
   end
   get '/tests' do
+    ImportCsv.import
     Exam.all.to_json
   end
 end

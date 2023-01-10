@@ -6,7 +6,7 @@ require 'pry-byebug'
 class ImportCsv
 
   def self.import
-    rows = CSV.read("./data.csv", col_sep: ';')[0,10]
+    rows = CSV.read("./data.csv", col_sep: ';')[0,20]
     columns = rows.shift
 
     a = rows.map do |row|
